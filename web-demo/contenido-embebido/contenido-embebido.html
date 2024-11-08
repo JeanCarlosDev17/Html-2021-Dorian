@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contenido embebido</title>
+    </head>
+
+    <body>
+        <h1>Contenido embebido</h1>
+        <!-- <h2>Insertar imagenes</h2>
+        <img src="./assets/imagenes/abstract-3d-hd-wallpapers.webp" alt="adn" width="700">
+        <img src="/web-demo/contenido-embebido/assets/imagenes/cr7.webp" alt="el cr7">
+        <img src="/web-demo/contenido-embebido/assets/imagenes/pp.webp" alt=""> -->
+
+        <!-- <h2>insertar imagenes segun el DPR(Device Pixel Ratio)</h2>
+        <img srcset="
+         ./assets/imagenes/abstract-3d-hd-wallpapers.webp ,
+         ./assets/imagenes/wallpapers-mobile-400.webp 3x" src="./assets/imagenes/abstract-3d-hd-wallpapers.jpg "
+            alt="imagen de fondo"> -->
+
+        <!--<h3>source</h3>
+         <picture>
+             <source srcset="
+            ./assets/imagenes/abstract-3d-hd-wallpapers.webp ,
+            ./assets/imagenes/wallpapers-mobile-400.webp 3x">
+            <source media="(max-width:700px )" srcset="./assets/imagenes/wallpapers-mobile-400.webp , ./assets/imagenes/wallpapers-mobile-400.jpg ">
+            <img src="./assets/imagenes/abstract-3d-hd-wallpapers.jpg" alt="">
+        </picture> -->
+        <h2>audio</h2>
+        <audio src="./assets/audio/audio.mp3" controls></audio>
+
+        <h2>video</h2>
+        <video width="320" height="240" autoplay>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </body>
+
+</html>

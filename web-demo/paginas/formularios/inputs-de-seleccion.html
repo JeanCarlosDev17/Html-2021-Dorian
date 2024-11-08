@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inputs de Selección</title>
+        <style>
+            body {
+                background-color: darkgrey
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Inputs de Selección</h1>
+        <h2>Radio button</h2>
+        <form>
+            <h3>Genero</h3>
+            <input type="radio" name="genero" id="generoM" value="Masculino">
+            <label for="generoM">Masculino</label>
+            <input type="radio" name="genero" id="generoF" value="Femenino">
+            <label for="generoM">Femenino</label>
+            <input type="radio" name="genero" id="generoD" value="Desconocido" checked>
+            <label for="generoM">Desconocido</label>
+        </form>
+        <h3>checbox</h3>
+        <form>
+            <label>HTML<input type="checkbox" name="language" value="html"></label>
+            <label>CSS<input type="checkbox" name="language" value="css"></label>
+            <label>JavaScript<input type="checkbox" name="language" value="javascript"></label>
+        </form>
+        <h3>Select</h3>
+        <form>
+            <label>Lenguaje preferido
+                <select name="lenguajes">
+                    <option value="">ninguno</option>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                </select>
+            </label>
+            <h4>Select avanzado</h4>
+            <label>Mascota
+                <select name="mascotas">
+                    <optgroup label="Aves">
+                        <option value="loro">Loro</option>
+                        <option value="canario">Canario</option>
+                        <option value="guacamaya">Guacamaya</option>
+                    </optgroup>
+                    <optgroup label="4 patas">
+                        <option value="perro">Perro</option>
+                        <option value="ardilla">Ardilla</option>
+                        <option value="gato">Gato</option>
+                    </optgroup>
+                    <optgroup label="Reptil">
+                        <option value="toturga">Tortuga</option>
+                        <option value="lagarto">lagarto</option>
+                        <option value="serpiente">serpiente</option>
+                    </optgroup>
+                </select>
+            </label>Mascota
+        </form>
+        <h2>DataList</h2>
+        <form>
+            <input list="mascotas">
+            <datalist id="mascotas">
+                <option value="loro"></option>
+                <option value="canario"></option>
+                <option value="guacamaya"></option>
+                <option value="perro"></option>
+                <option value="ardilla"></option>
+                <option value="gato"></option>
+                <option value="toturga"></option>
+                <option value="lagarto"></option>
+                <option value="serpiente"></option>
+                <option value="sapo"></option>
+            </datalist>
+        </form>
+        <h2>Fieldset </h2>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name"></label>
+                <input type="text" id="name" spellcheck="true">
+                <label for="surname"></label>
+                <input type="text" id="surname">
+            </fieldset>
+            <fieldset>
+                <legend>file</legend>
+                <label for="file"></label>
+                <input type="file" name="file" id="file">
+            </fieldset>
+            <div>
+                <h3>meter</h3>
+                <label for="fuel">combustible</label>
+                <meter id="fuel" min="0" max="100" low="20" optimum="60" high="80" value="36"></meter>
+            </div>
+            <div>
+                <h3>progress</h3>
+                <label for="tarea">Tarea 1</label>
+                <progress id="tarea" value="75" max="100"></progress>
+            </div>
+            <h3>Textarea</h3>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </form>
+    </body>
+
+</html>
